@@ -1,0 +1,22 @@
+\newcounter{ProblemNum}
+\newcounter{SubProblemNum}[ProblemNum]
+
+\renewcommand{\theProblemNum}{\arabic{ProblemNum}}
+\renewcommand{\theSubProblemNum}{\alph{SubProblemNum}}
+
+
+\newcommand*{\anyproblem}[1]{\section*{#1}}
+\newcommand*{\problem}[1]{\stepcounter{ProblemNum} %
+   \anyproblem{Question #1}}
+
+\newcommand*{\soln}[1]{\subsection*{#1}}
+\newcommand*{\pt}[1]{\subsubsection*{#1}}
+\newcommand*{\solution}{\soln{Solution}}
+\renewcommand*{\part}{\stepcounter{SubProblemNum} %
+  \pt{Part (\theSubProblemNum)}}
+
+\newcommand*{\chapter}[1]{\vspace{12pt}\noindent\underline{\textbf{\large #1}}}
+
+\renewcommand{\theenumi}{(\alph{enumi})}
+\renewcommand{\labelenumi}{\theenumi}
+\renewcommand{\theenumii}{\roman{enumii}}
