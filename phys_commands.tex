@@ -10,7 +10,7 @@
 \newcommand{\proton}{\text{p}^{+}}
 \newcommand{\neutron}{\text{n}^{0}}
 
-\newcommand{\eMass}{\SI{9.109e-31}{kg}}
+\newcommand{\eMass}{\SI{9.1e-31}{kg}}
 \newcommand{\pMass}{\SI{1.67e-27}{kg}}
 
 %%%%%%%%%%%%%
@@ -25,12 +25,30 @@
 % Constants %
 %%%%%%%%%%%%%
 
-\newcommand{\hVal}{\SI{6.63e-34}{\joule\second}}
-\newcommand{\hbarVal}{\SI{1.055e-34}{\joule\second}}
-\newcommand{\cVal}{\SI{3e8}{m/s}}
+\newcommand{\hNum}{\SI{6.63e-34}{\joule\second}}
+\newcommand{\hbarNum}{\SI{1.06e-34}{\joule\second}}
+\newcommand{\cNum}{\SI{3e8}{m/s}}
 
 %%%%%%%%%%%%%
 % Notations %
 %%%%%%%%%%%%%
 
 \newcommand*{\mean}[1]{\bar{#1}}
+
+%%%%%%%%%%%%%
+% Operators %
+%%%%%%%%%%%%%
+
+\newcommand{\parity}{\hat{P}}
+\newcommand{\hamiltonian}{\hat{H}}
+\newcommand{\linearop}{\hat{L}}
+\newcommand{\genop}{\hat{O}}
+\newcommand{\operator}[1]{\hat{#1}}
+\renewcommand{\comm}[2]{\qty[\hat{#1},\hat{#2}]}
+\renewcommand{\div}[1]{\nabla\cdot#1}
+
+%%%%%%%%%
+% Names %
+%%%%%%%%%
+
+\newcommand{\Schrodinger}{Schr\"{o}dinger }
