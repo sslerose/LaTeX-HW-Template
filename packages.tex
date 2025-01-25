@@ -1,20 +1,33 @@
-\usepackage[margin=1in]{geometry}   % For setting margins
-\usepackage{amsmath}				% For Math
-\usepackage{fancyhdr}				% For fancy header/footer
-\usepackage{graphicx}				% For including figure/image
+%%%%%%%%%%%%%%
+% Page Style %
+%%%%%%%%%%%%%%
+\usepackage[margin=1in]{geometry}   % Setting margins
+\usepackage{fancyhdr}				% Fancy header/footer
+\usepackage{titlesec}               % title formatting
+\usepackage[T1]{fontenc}            % Better diacritic output
+\usepackage{newtxtext,newtxmath}    % URW Nimbus Roman
+\usepackage{enumitem}               % Better enumerate environment
+\usepackage{multirow, booktabs}     % Better tabular commands
+
+
+%%%%%%%%
+% Math %
+%%%%%%%%
+\usepackage{amsmath}				% Primary math package
 \usepackage{cancel}					% To use the slash to cancel out stuff in work
-\usepackage{physics}
-\usepackage{titlesec}
-\usepackage{siunitx}
-\usepackage{empheq}
-\usepackage{mathptmx}
-\usepackage[libertine]{newtxmath}
-\usepackage[hypertexnames=false]{hyperref}
-%\usepackage{pgfplots}
-\usepackage{tikz}
-\usepackage{lipsum}
-\usepackage{enumitem}
-\usepackage{xfrac}
-\usepackage{subcaption}
-\usepackage{wrapfig}
-\usepackage[font=footnotesize,labelfont=bf]{caption}
+\usepackage{physics}                % Better math symbols common to physics
+\usepackage{siunitx}                % Easy SI unit expressions
+\usepackage{empheq}                 % Good for some alignment and equation boxing
+\usepackage{xfrac}                  % Better fraction commands
+\usepackage{mathtools}              % Beautify math and add some useful commands
+\usepackage{bm}                     % Bold math
+%\usepackage{mathrsfs}               % Raph Smith's Formal Script math font
+
+
+%%%%%%%%%%%
+% Figures %
+%%%%%%%%%%%
+\usepackage{graphicx}				% Including figure/image
+\usepackage{tikz}                   % Detailed custom figures
+\usepackage{wrapfig}                % Enable wrapping text around figures
+\usepackage[font=footnotesize,labelfont=bf]{caption}    % Figure caption formatting
