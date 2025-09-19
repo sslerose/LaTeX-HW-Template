@@ -6,53 +6,57 @@
 % Particles %
 %%%%%%%%%%%%%
 
-\newcommand{\electron}{\text{e}^{-}}
-\newcommand{\proton}{\text{p}^{+}}
-\newcommand{\neutron}{\text{n}^{0}}
+\newcommand{\electron}{\text{e}^{-}}    % Electron symbol
+\newcommand{\proton}{\text{p}^{+}}      % Proton symbol
+\newcommand{\neutron}{\text{n}^{0}}     % Neutron symbol
 
-\newcommand{\e}{\text{e}}
-\newcommand{\p}{\text{p}}
-\newcommand{\n}{\text{n}}
-
-\newcommand{\eMass}{\SI{0.511}{\MeVperc}}
-\newcommand{\pMass}{\SI{938.272}{\MeVperc}}
-\newcommand{\nMass}{\SI{939.565}{\MeVperc}}
+\newcommand{\eMass}{\SI{0.511}{\MeVperc}}   % Electron mass MeV
+\newcommand{\pMass}{\SI{938.272}{\MeVperc}} % Proton mass MeV
+\newcommand{\nMass}{\SI{939.565}{\MeVperc}} % Neutron mass MeV
 
 %%%%%%%%%%%%%
 % Variables %
 %%%%%%%%%%%%%
 
-\newcommand*{\freq}{\mathord{\mathit{f}}\mkern1mu}
+\newcommand*{\freq}{\mathord{\mathit{f}}\mkern1mu}  % Frequency (slightly different from f)
+\newcommand*{\lag}{\mathscr{L}}     % Lagrangian
+\newcommand*{\hamil}{\mathscr{H}}   % Hamiltonian
 
 %%%%%%%%%%%%%
 % Constants %
 %%%%%%%%%%%%%
 
-\newcommand{\hNum}{\SI{6.63e-34}{\joule\second}}
-\newcommand{\hbarNum}{\SI{1.06e-34}{\joule\second}}
-\newcommand{\cNum}{\SI{3e8}{m/s}}
+\newcommand{\hNum}{\SI{6.63e-34}{\joule\second}}    % Planck's constant
+\newcommand{\hbarNum}{\SI{1.06e-34}{\joule\second}} % Reduced Planck's constant
+\newcommand{\cNum}{\SI{3e8}{m/s}}                   % Speed of light
+
+%%%%%%%%%%%%%
+% Functions %
+%%%%%%%%%%%%%
+
+\newcommand*{\e}{\text{e}}  % Exponential
 
 %%%%%%%%%%%%%
 % Notations %
 %%%%%%%%%%%%%
 
-\newcommand*{\mean}[1]{\bar{#1}}
+\newcommand*{\mean}[1]{\bar{#1}}    % Mean notation
 
 %%%%%%%%%%%%%
 % Operators %
 %%%%%%%%%%%%%
 
-\renewcommand{\comm}[2]{\qty[\hat{#1},\hat{#2}]}
-\renewcommand{\div}[1]{\nabla\cdot#1}
+\renewcommand{\comm}[2]{\qty[\hat{#1},\hat{#2}]}    % Commutator
+\renewcommand{\div}[1]{\nabla\cdot#1}               % Divergence
 
 %%%%%%%%%
 % Names %
 %%%%%%%%%
 
-\newcommand{\Schrodinger}{Schr\"{o}dinger }
+\newcommand{\Schrodinger}{Schr\"{o}dinger } % Schrodinger
 
 %%%%%%%%%
 % Units %
 %%%%%%%%%
 
-\DeclareSIUnit{\MeVperc}{\unit{MeV/c^2}}
+\DeclareSIUnit{\MeVperc}{\unit{MeV/c^2}}    % Mega-electronvolt unit
