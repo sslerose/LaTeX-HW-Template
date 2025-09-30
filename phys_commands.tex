@@ -6,57 +6,43 @@
 % Particles %
 %%%%%%%%%%%%%
 
-\newcommand{\electron}{\text{e}^{-}}    % Electron symbol
-\newcommand{\proton}{\text{p}^{+}}      % Proton symbol
-\newcommand{\neutron}{\text{n}^{0}}     % Neutron symbol
-
-\newcommand{\eMass}{\SI{0.511}{\MeVperc}}   % Electron mass MeV
-\newcommand{\pMass}{\SI{938.272}{\MeVperc}} % Proton mass MeV
-\newcommand{\nMass}{\SI{939.565}{\MeVperc}} % Neutron mass MeV
+\newcommand*{\electron}{\text{e}^{-}}    % Electron symbol
+\newcommand*{\proton}{\text{p}^{+}}      % Proton symbol
+\newcommand*{\neutron}{\text{n}^{0}}     % Neutron symbol
 
 %%%%%%%%%%%%%
 % Variables %
 %%%%%%%%%%%%%
 
-\newcommand*{\freq}{\mathord{\mathit{f}}\mkern1mu}  % Frequency (slightly different from f)
-\newcommand*{\lag}{\mathscr{L}}     % Lagrangian
-\newcommand*{\hamil}{\mathscr{H}}   % Hamiltonian
-
-%%%%%%%%%%%%%
-% Constants %
-%%%%%%%%%%%%%
-
-\newcommand{\hNum}{\SI{6.63e-34}{\joule\second}}    % Planck's constant
-\newcommand{\hbarNum}{\SI{1.06e-34}{\joule\second}} % Reduced Planck's constant
-\newcommand{\cNum}{\SI{3e8}{m/s}}                   % Speed of light
+\newcommand*{\freq}{\mathord{\mathit{f}}\mkern1mu}  % Frequency (better f)
+\newcommand*{\imgnry}{{\bm{i}\mkern1mu}}            % Imaginary number (bold i)
+\newcommand*{\lag}{\mathscr{L}}                     % Lagrangian (curly L)
+\newcommand*{\hamil}{\mathscr{H}}                   % Hamiltonian (curly H)
 
 %%%%%%%%%%%%%
 % Functions %
 %%%%%%%%%%%%%
 
-\newcommand*{\e}{\text{e}}  % Exponential
-
-%%%%%%%%%%%%%
-% Notations %
-%%%%%%%%%%%%%
-
-\newcommand*{\mean}[1]{\bar{#1}}    % Mean notation
+\newcommand*{\e}{\mathrm{e}}    % Exponential function
 
 %%%%%%%%%%%%%
 % Operators %
 %%%%%%%%%%%%%
 
 \renewcommand{\comm}[2]{\qty[\hat{#1},\hat{#2}]}    % Commutator
-\renewcommand{\div}[1]{\nabla\cdot#1}               % Divergence
+
+\renewcommand{\grad}{\nabla}                % Gradient
+\renewcommand{\div}[1]{\nabla\cdot#1}       % Divergence
+\renewcommand{\curl}[1]{\nabla\times#1}     % Curl
+
+%%%%%%%%%%%%%
+% Notations %
+%%%%%%%%%%%%%
+
+\newcommand*{\mean}[1]{\bar{#1}}    % Average (overhead bar notation)
 
 %%%%%%%%%
 % Names %
 %%%%%%%%%
 
-\newcommand{\Schrodinger}{Schr\"{o}dinger } % Schrodinger
-
-%%%%%%%%%
-% Units %
-%%%%%%%%%
-
-\DeclareSIUnit{\MeVperc}{\unit{MeV/c^2}}    % Mega-electronvolt unit
+\newcommand*{\Schrodinger}{Schr\"{o}dinger }    % Schrodinger with o dots
