@@ -22,26 +22,26 @@
 \renewcommand{\theenumii}{\roman{enumii}}
 
 % Add spacing to \ev commands for prettier formatting
-\DeclareDocumentCommand\expectationvalue{ s s m g }
-{ % Expectation value
-    \ensuremath{
-    \IfNoValueTF{#4}
-    {
-        \IfBooleanTF{#1}
-        {\vphantom{#3}\left\langle\smash{\,#3\,}\right\rangle} % Starred implicit form: no resizing
-        {\left\langle{\,#3\,}\right\rangle} % Normal implicit form: auto sizing
-    }
-    {
-        \IfBooleanTF{#1}
-        {
-            \IfBooleanTF{#2}
-            {\left\langle{#4\,}\middle\vert{\,#3\,}\middle\vert{\,#4}\right\rangle} % Double starred explicit form: total auto sizing
-            {\vphantom{#3#4}\left\langle\smash{#4\,}\middle\vert\smash{\,#3\,}\middle\vert\smash{\,#4}\right\rangle} % Starred explicit form: no resizing
-        }
-        {\vphantom{#3}\left\langle{#4\,}\middle\vert\smash{\,#3\,}\middle\vert{\,#4}\right\rangle} % Normal explicit form: only resize based on bra/ket arguments
-    }
-    }
-}
+% \DeclareDocumentCommand\expectationvalue{ s s m g }
+% { % Expectation value
+%     \ensuremath{
+%     \IfNoValueTF{#4}
+%     {
+%         \IfBooleanTF{#1}
+%         {\vphantom{#3}\left\langle\smash{\,#3\,}\right\rangle} % Starred implicit form: no resizing
+%         {\left\langle{\,#3\,}\right\rangle} % Normal implicit form: auto sizing
+%     }
+%     {
+%         \IfBooleanTF{#1}
+%         {
+%             \IfBooleanTF{#2}
+%             {\left\langle{#4\,}\middle\vert{\,#3\,}\middle\vert{\,#4}\right\rangle} % Double starred explicit form: total auto sizing
+%             {\vphantom{#3#4}\left\langle\smash{#4\,}\middle\vert\smash{\,#3\,}\middle\vert\smash{\,#4}\right\rangle} % Starred explicit form: no resizing
+%         }
+%         {\vphantom{#3}\left\langle{#4\,}\middle\vert\smash{\,#3\,}\middle\vert{\,#4}\right\rangle} % Normal explicit form: only resize based on bra/ket arguments
+%     }
+%     }
+% }
 
 % Add spacing to \mel commands for prettier formatting
 \DeclareDocumentCommand\matrixelement{ s s m m m }
