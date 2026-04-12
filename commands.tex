@@ -44,15 +44,15 @@
 % }
 
 % Add spacing to \mel commands for prettier formatting
-\DeclareDocumentCommand\matrixelement{ s s m m m }
-{ % Matrix element
-    \ensuremath{
-    \IfBooleanTF{#1}
-    {
-        \IfBooleanTF{#2}
-        {\left\langle{\,#3\,}\middle\vert{\,#4\,}\middle\vert{\,#5\,}\right\rangle} % Double starred: total resizing
-        {\vphantom{#3#4#5}\left\langle\smash{\,#3\,}\middle\vert\smash{\,#4\,}\middle\vert\smash{\,#5\,}\right\rangle} % Starred: no resizing
-    }
-    {\vphantom{#4}\left\langle{\,#3\,}\middle\vert\smash{\,#4\,}\middle\vert{\,#5\,}\right\rangle} % Normal: only resize based on bra/ket arguments
-    }
-}
+% \DeclareDocumentCommand\matrixelement{ s s m m m }
+% { % Matrix element
+%     \ensuremath{
+%     \IfBooleanTF{#1}
+%     {
+%         \IfBooleanTF{#2}
+%         {\left\langle{\,#3\,}\middle\vert{\,#4\,}\middle\vert{\,#5\,}\right\rangle} % Double starred: total resizing
+%         {\vphantom{#3#4#5}\left\langle\smash{\,#3\,}\middle\vert\smash{\,#4\,}\middle\vert\smash{\,#5\,}\right\rangle} % Starred: no resizing
+%     }
+%     {\vphantom{#4}\left\langle{\,#3\,}\middle\vert\smash{\,#4\,}\middle\vert{\,#5\,}\right\rangle} % Normal: only resize based on bra/ket arguments
+%     }
+% }
